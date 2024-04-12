@@ -7,11 +7,22 @@ import (
 
 func main() {
 	router := http.NewServeMux()
-	router.HandleFunc("GET /", myHandler)
-	http.ListenAndServe(":8080", router)
+	router.HandleFunc("/", handleLogin)
+
+	http.ListenAndServe(":8000", router)
 }
 
-func myHandler(writer http.ResponseWriter, request *http.Request) {
-	fmt.Println(request)
+func handleLogin(w http.ResponseWriter, r *http.Request) {
+	corsHandler(w, r)
+	fmt.Println(r.FormValue("password"))
+}
 
+func corsHandler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Headers", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "*")
+	if r.Method == "OPTIONS" {
+		w.WriteHeader(http.StatusOK)
+		return
+	}
 }
