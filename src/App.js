@@ -2,24 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+}
+async function login() {
+  let url = "/";
+
+  var http = new XMLHttpRequest();
+  http.open("get", url, false, this.username, this.password);
+  http.send("");
+
+  if (http.status === 200) {
+    document.cookie = `username=${this.username}`;
+    window.location = "/directory";
+  } else {
+    this.form = { error: "Invalid login." }
+  }
 }
 
 export default App;
