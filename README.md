@@ -1,80 +1,70 @@
-Project Structure
-Backend:
-Framework: Choose a backend framework that supports SQLite (e.g., Flask, Django, Express.js)
-Database: SQLite for data management.
-Authentication: User authentication with secure password storage.
-Session Management: Use UUIDs for session management.
-API Endpoints: For user registration, login, post creation, post liking/disliking, comments, category association, and filtering.
-Frontend:
-Pages: User registration, login, forum homepage, post details, user profile.
-Interactivity: Form submission for posts/comments, like/dislike functionality, category filtering.
-Database Design:
-Entity Relationship Diagram (ERD) to define the database schema.
-Tables for users, posts, comments, categories, likes/dislikes.
-Docker:
-Dockerfile: For setting up the application's environment and dependencies.
-Container Management: Scripts for building and running the container.
-Tasks Breakdown
-Database Design:
+# Getting Started with Create React App
 
-Design an ERD.
-Create tables for users, posts, comments, categories, and reactions.
-Define relationships (foreign keys, one-to-many, many-to-many).
-Backend Development:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Set up the backend framework.
-Configure SQLite with the backend.
-Implement user authentication and session management.
-Develop API endpoints for all required functionalities.
-Implement password encryption for secure storage.
-Frontend Development:
+## Available Scripts
 
-Create the user interface with HTML/CSS/JS.
-Connect the frontend with the backend through API calls.
-Ensure responsiveness and interactivity.
-Like/Dislike Functionality:
+In the project directory, you can run:
 
-Backend logic to handle like/dislike.
-Frontend components for users to like/dislike posts and comments.
-Post Filtering:
+### `npm start`
 
-Backend logic for filtering posts by categories.
-Frontend components to apply filters.
-Dockerize the Application:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Write the Dockerfile for the application.
-Create Docker images and test the containers.
-Write documentation on how to build and run the containers.
-Bonus Functionality (Optional):
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Search feature implementation.
-File upload feature for users.
-User profile page with editable information.
-Testing:
+### `npm test`
 
-Write unit and integration tests for the backend.
-Conduct front-end testing, including forms and interactivity.
-Test the Docker deployment process.
-Documentation:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Write a README.md detailing the project setup and usage.
-Comment code appropriately for maintainability.
-Version Control:
+### `npm run build`
 
-Initialize a Git repository.
-Commit changes with clear, descriptive messages.
-Execution Plan
-Sprint 0: Project setup, including initializing the repository and Docker environment.
-Sprint 1: Database design and backend setup.
-Sprint 2: Implement authentication, session management, and core functionalities.
-Sprint 3: Frontend development and connection to the backend.
-Sprint 4: Like/dislike functionality and post filtering.
-Sprint 5: Docker containerization and deployment.
-Sprint 6: Implement bonus features if time allows and final testing.
-Sprint 7: Documentation and final touches.
-Project Management
-Use an agile methodology, with regular stand-ups to discuss progress and obstacles.
-Track tasks using a project management tool (e.g., JIRA, Trello).
-Maintain a backlog of tasks and prioritize them for each sprint.
-Next Steps
-If this project structure and task breakdown align with your vision for the "Literary Lions" forum, the next step would be to start on the database design or backend setup, depending on your preference. Let me know which part you would like to begin with, or if there are any specific tasks you'd like to focus on first.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
